@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MainController: UIViewController, UITableViewDelegate, UITableViewDataSource, APITwitterDelegate {
-	private let cellid = "tweeeeets"
+class MainController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate,  APITwitterDelegate {
+	let cellid = "tweeeeets"
+	let headerid = "search"
 	var service: TweetService?
 	var tweets: [Tweet]?
 	
@@ -19,11 +20,24 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		return tableView
 	}()
 	
+	let searchBar: UISearchBar = {
+		let bar = UISearchBar()
+		bar.text = "ecole 42"
+		return bar
+	}()
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = "Tweets"
 		view.backgroundColor = .white
+		view.addSubview(tableView)
+		searchBar.delegate = self
 		setupTableView()
+		setupLayouts()
+		setupService()
+	}
+	
+	private func setupService() {
 		DataService.shared.getToken { token in
 			guard let token = token else { return }
 			self.service = TweetService(token: token, delegate: self)
@@ -31,11 +45,7 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		}
 	}
 	
-	private func setupTableView() {
-		view.addSubview(tableView)
-		tableView.delegate = self
-		tableView.dataSource = self
-		tableView.register(TweetCell.self, forCellReuseIdentifier: cellid)
+	private func setupLayouts() {
 		_ = tableView.constraint(.top, to: view)
 		tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 		tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
@@ -51,22 +61,10 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
 		print(error)
 	}
 	
-	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return tweets?.count ?? 0
-	}
-	
-	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCell(withIdentifier: cellid, for: indexPath) as! TweetCell
-		guard let tweet = tweets?[indexPath.item] else { return cell }
-		cell.tweet = tweet
-		return cell
-	}
-	
-	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		guard let tweet = tweets?[indexPath.item] else { return 0 }
-		let size = CGSize(width: tableView.frame.width - 75, height: 1000)
-		let estimatedFrame = tweet.attributed.boundingRect(with: size, options: .usesLineFragmentOrigin, context: nil)
-		return estimatedFrame.height + 20
+	func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+		searchBar.resignFirstResponder()
+		guard let text = searchBar.text, text != "" else { return }
+		service?.search(text)
 	}
 }
 
