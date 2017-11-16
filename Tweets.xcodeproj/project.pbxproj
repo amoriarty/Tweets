@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B091FBD6AF600B65D90 /* User.swift */; };
 		ECB3EDE91FBB4A5100AFCAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */; };
-		ECB3EDEB1FBB4A5100AFCAD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDEA1FBB4A5100AFCAD4 /* ViewController.swift */; };
-		ECB3EDEE1FBB4A5100AFCAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB3EDEC1FBB4A5100AFCAD4 /* Main.storyboard */; };
+		ECB3EDEB1FBB4A5100AFCAD4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */; };
 		ECB3EDF01FBB4A5100AFCAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB3EDEF1FBB4A5100AFCAD4 /* Assets.xcassets */; };
 		ECB3EDF31FBB4A5100AFCAD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB3EDF11FBB4A5100AFCAD4 /* LaunchScreen.storyboard */; };
+		ECB3EDFC1FBB4BF300AFCAD4 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDFB1FBB4BF300AFCAD4 /* Tweet.swift */; };
+		ECB3EDFF1FBB4C5800AFCAD4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDFE1FBB4C5800AFCAD4 /* DataService.swift */; };
+		ECB3EE011FBB509A00AFCAD4 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EE001FBB509A00AFCAD4 /* Configurations.swift */; };
+		ECB3EE031FBB675800AFCAD4 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EE021FBB675800AFCAD4 /* TweetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC233B091FBD6AF600B65D90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ECB3EDE51FBB4A5100AFCAD4 /* Tweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECB3EDEA1FBB4A5100AFCAD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECB3EDED1FBB4A5100AFCAD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		ECB3EDEF1FBB4A5100AFCAD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB3EDF21FBB4A5100AFCAD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB3EDF41FBB4A5100AFCAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECB3EDFB1FBB4BF300AFCAD4 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		ECB3EDFE1FBB4C5800AFCAD4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		ECB3EE001FBB509A00AFCAD4 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		ECB3EE021FBB675800AFCAD4 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,33 @@
 			isa = PBXGroup;
 			children = (
 				ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */,
-				ECB3EDEA1FBB4A5100AFCAD4 /* ViewController.swift */,
-				ECB3EDEC1FBB4A5100AFCAD4 /* Main.storyboard */,
+				ECB3EE001FBB509A00AFCAD4 /* Configurations.swift */,
+				ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */,
+				ECB3EDFA1FBB4BDD00AFCAD4 /* Models */,
+				ECB3EDFD1FBB4C4400AFCAD4 /* Services */,
 				ECB3EDEF1FBB4A5100AFCAD4 /* Assets.xcassets */,
 				ECB3EDF11FBB4A5100AFCAD4 /* LaunchScreen.storyboard */,
 				ECB3EDF41FBB4A5100AFCAD4 /* Info.plist */,
 			);
 			path = Tweets;
+			sourceTree = "<group>";
+		};
+		ECB3EDFA1FBB4BDD00AFCAD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECB3EDFB1FBB4BF300AFCAD4 /* Tweet.swift */,
+				EC233B091FBD6AF600B65D90 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECB3EDFD1FBB4C4400AFCAD4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ECB3EDFE1FBB4C5800AFCAD4 /* DataService.swift */,
+				ECB3EE021FBB675800AFCAD4 /* TweetService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +153,6 @@
 			files = (
 				ECB3EDF31FBB4A5100AFCAD4 /* LaunchScreen.storyboard in Resources */,
 				ECB3EDF01FBB4A5100AFCAD4 /* Assets.xcassets in Resources */,
-				ECB3EDEE1FBB4A5100AFCAD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +163,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECB3EDEB1FBB4A5100AFCAD4 /* ViewController.swift in Sources */,
+				ECB3EDFC1FBB4BF300AFCAD4 /* Tweet.swift in Sources */,
+				ECB3EE011FBB509A00AFCAD4 /* Configurations.swift in Sources */,
+				ECB3EDEB1FBB4A5100AFCAD4 /* MainController.swift in Sources */,
+				EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */,
 				ECB3EDE91FBB4A5100AFCAD4 /* AppDelegate.swift in Sources */,
+				ECB3EDFF1FBB4C5800AFCAD4 /* DataService.swift in Sources */,
+				ECB3EE031FBB675800AFCAD4 /* TweetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ECB3EDEC1FBB4A5100AFCAD4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECB3EDED1FBB4A5100AFCAD4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECB3EDF11FBB4A5100AFCAD4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
