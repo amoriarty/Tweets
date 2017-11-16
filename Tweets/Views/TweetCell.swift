@@ -9,12 +9,14 @@
 import UIKit
 
 class TweetCell: UITableViewCell {
-	
-	
 	var tweet: Tweet? {
 		didSet {
 			guard let tweet = tweet else { return }
 			textView.attributedText = tweet.attributed
+			ImageService.shared.getImage(at: tweet.user.imageUrl) { image in
+				guard let image = image else { return }
+				self.picture.image = image
+			}
 		}
 	}
 	
@@ -22,6 +24,8 @@ class TweetCell: UITableViewCell {
 		let imageView = UIImageView()
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		imageView.backgroundColor = .black
+		imageView.clipsToBounds = true
+		imageView.contentMode = .scaleAspectFit
 		imageView.layer.cornerRadius = 5
 		return imageView
 	}()

@@ -10,6 +10,7 @@
 		EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B091FBD6AF600B65D90 /* User.swift */; };
 		EC233B0D1FBD701A00B65D90 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B0C1FBD701A00B65D90 /* TweetCell.swift */; };
 		EC233B111FBD71F700B65D90 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B101FBD71F700B65D90 /* UIView+Constraints.swift */; };
+		EC233B131FBD953A00B65D90 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B121FBD953A00B65D90 /* ImageService.swift */; };
 		ECB3EDE91FBB4A5100AFCAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */; };
 		ECB3EDEB1FBB4A5100AFCAD4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */; };
 		ECB3EDF01FBB4A5100AFCAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB3EDEF1FBB4A5100AFCAD4 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		EC233B091FBD6AF600B65D90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC233B0C1FBD701A00B65D90 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		EC233B101FBD71F700B65D90 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		EC233B121FBD953A00B65D90 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		ECB3EDE51FBB4A5100AFCAD4 /* Tweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				ECB3EDFE1FBB4C5800AFCAD4 /* DataService.swift */,
 				ECB3EE021FBB675800AFCAD4 /* TweetService.swift */,
+				EC233B121FBD953A00B65D90 /* ImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				ECB3EDFC1FBB4BF300AFCAD4 /* Tweet.swift in Sources */,
 				ECB3EE011FBB509A00AFCAD4 /* Configurations.swift in Sources */,
 				ECB3EDEB1FBB4A5100AFCAD4 /* MainController.swift in Sources */,
+				EC233B131FBD953A00B65D90 /* ImageService.swift in Sources */,
 				EC233B111FBD71F700B65D90 /* UIView+Constraints.swift in Sources */,
 				EC233B0D1FBD701A00B65D90 /* TweetCell.swift in Sources */,
 				EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */,

@@ -16,6 +16,6 @@ struct User: Decodable {
 	private enum CodingKeys: String, CodingKey {
 		case name
 		case screenName = "screen_name"
-		case imageUrl = "profile_image_url"
+		case imageUrl = "profile_image_url_https"
 	}
 }
