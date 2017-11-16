@@ -32,7 +32,7 @@ class DataService {
 				DispatchQueue.main.async { completion(nil) }
 				return
 			}
-			completion(result)
+			DispatchQueue.main.async { completion(result) }
 		}.resume()
 	}
 	

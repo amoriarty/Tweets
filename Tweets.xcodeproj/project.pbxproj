@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B091FBD6AF600B65D90 /* User.swift */; };
+		EC233B0D1FBD701A00B65D90 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B0C1FBD701A00B65D90 /* TweetCell.swift */; };
+		EC233B111FBD71F700B65D90 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B101FBD71F700B65D90 /* UIView+Constraints.swift */; };
 		ECB3EDE91FBB4A5100AFCAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */; };
 		ECB3EDEB1FBB4A5100AFCAD4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */; };
 		ECB3EDF01FBB4A5100AFCAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB3EDEF1FBB4A5100AFCAD4 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		EC233B091FBD6AF600B65D90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC233B0C1FBD701A00B65D90 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		EC233B101FBD71F700B65D90 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		ECB3EDE51FBB4A5100AFCAD4 /* Tweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC233B0B1FBD6FF000B65D90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC233B0C1FBD701A00B65D90 /* TweetCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC233B0F1FBD71CC00B65D90 /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				EC233B101FBD71F700B65D90 /* UIView+Constraints.swift */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
 		ECB3EDDC1FBB4A5100AFCAD4 = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +86,9 @@
 				ECB3EE001FBB509A00AFCAD4 /* Configurations.swift */,
 				ECB3EDEA1FBB4A5100AFCAD4 /* MainController.swift */,
 				ECB3EDFA1FBB4BDD00AFCAD4 /* Models */,
+				EC233B0B1FBD6FF000B65D90 /* Views */,
 				ECB3EDFD1FBB4C4400AFCAD4 /* Services */,
+				EC233B0F1FBD71CC00B65D90 /* Toolbox */,
 				ECB3EDEF1FBB4A5100AFCAD4 /* Assets.xcassets */,
 				ECB3EDF11FBB4A5100AFCAD4 /* LaunchScreen.storyboard */,
 				ECB3EDF41FBB4A5100AFCAD4 /* Info.plist */,
@@ -166,6 +188,8 @@
 				ECB3EDFC1FBB4BF300AFCAD4 /* Tweet.swift in Sources */,
 				ECB3EE011FBB509A00AFCAD4 /* Configurations.swift in Sources */,
 				ECB3EDEB1FBB4A5100AFCAD4 /* MainController.swift in Sources */,
+				EC233B111FBD71F700B65D90 /* UIView+Constraints.swift in Sources */,
+				EC233B0D1FBD701A00B65D90 /* TweetCell.swift in Sources */,
 				EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */,
 				ECB3EDE91FBB4A5100AFCAD4 /* AppDelegate.swift in Sources */,
 				ECB3EDFF1FBB4C5800AFCAD4 /* DataService.swift in Sources */,
