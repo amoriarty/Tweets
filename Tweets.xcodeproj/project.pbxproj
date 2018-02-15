@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0F193C2035911C003C674D /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0F193B2035911C003C674D /* Configurations.swift */; };
 		EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B091FBD6AF600B65D90 /* User.swift */; };
 		EC233B0D1FBD701A00B65D90 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B0C1FBD701A00B65D90 /* TweetCell.swift */; };
 		EC233B111FBD71F700B65D90 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC233B101FBD71F700B65D90 /* UIView+Constraints.swift */; };
@@ -18,11 +19,12 @@
 		ECB3EDF31FBB4A5100AFCAD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB3EDF11FBB4A5100AFCAD4 /* LaunchScreen.storyboard */; };
 		ECB3EDFC1FBB4BF300AFCAD4 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDFB1FBB4BF300AFCAD4 /* Tweet.swift */; };
 		ECB3EDFF1FBB4C5800AFCAD4 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDFE1FBB4C5800AFCAD4 /* DataService.swift */; };
-		ECB3EE011FBB509A00AFCAD4 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EE001FBB509A00AFCAD4 /* Configurations.swift */; };
 		ECB3EE031FBB675800AFCAD4 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EE021FBB675800AFCAD4 /* TweetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC0F193B2035911C003C674D /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		EC0F193D2035913D003C674D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EC233B091FBD6AF600B65D90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EC233B0C1FBD701A00B65D90 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		EC233B101FBD71F700B65D90 /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
@@ -36,7 +38,6 @@
 		ECB3EDF41FBB4A5100AFCAD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECB3EDFB1FBB4BF300AFCAD4 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		ECB3EDFE1FBB4C5800AFCAD4 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		ECB3EE001FBB509A00AFCAD4 /* Configurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
 		ECB3EE021FBB675800AFCAD4 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +80,7 @@
 		ECB3EDDC1FBB4A5100AFCAD4 = {
 			isa = PBXGroup;
 			children = (
+				EC0F193D2035913D003C674D /* README.md */,
 				ECB3EDE71FBB4A5100AFCAD4 /* Tweets */,
 				ECB3EDE61FBB4A5100AFCAD4 /* Products */,
 			);
@@ -96,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				ECB3EDE81FBB4A5100AFCAD4 /* AppDelegate.swift */,
-				ECB3EE001FBB509A00AFCAD4 /* Configurations.swift */,
+				EC0F193B2035911C003C674D /* Configurations.swift */,
 				EC233B161FBDA30D00B65D90 /* Controllers */,
 				ECB3EDFA1FBB4BDD00AFCAD4 /* Models */,
 				EC233B0B1FBD6FF000B65D90 /* Views */,
@@ -200,11 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB3EDFC1FBB4BF300AFCAD4 /* Tweet.swift in Sources */,
-				ECB3EE011FBB509A00AFCAD4 /* Configurations.swift in Sources */,
 				ECB3EDEB1FBB4A5100AFCAD4 /* MainController.swift in Sources */,
 				EC233B131FBD953A00B65D90 /* ImageService.swift in Sources */,
 				EC233B181FBDA33000B65D90 /* MainController+TableView.swift in Sources */,
 				EC233B111FBD71F700B65D90 /* UIView+Constraints.swift in Sources */,
+				EC0F193C2035911C003C674D /* Configurations.swift in Sources */,
 				EC233B0D1FBD701A00B65D90 /* TweetCell.swift in Sources */,
 				EC233B0A1FBD6AF600B65D90 /* User.swift in Sources */,
 				ECB3EDE91FBB4A5100AFCAD4 /* AppDelegate.swift in Sources */,
